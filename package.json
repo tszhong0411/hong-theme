@@ -1,6 +1,6 @@
 {
   "name": "hong-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A opinionated theme",
   "license": "MIT",
   "repository": {
@@ -10,17 +10,11 @@
   "bugs": {
     "url": "https://github.com/tszhong0411/honghong.me/issues"
   },
-  "type": "module",
   "scripts": {
     "format:check": "prettier --cache --check --ignore-path .gitignore --ignore-path .prettierignore .",
-    "format:write": "prettier --cache --write --list-different --ignore-path .gitignore --ignore-path .prettierignore .",
-    "package": "vsce package",
-    "version": "changeset version"
+    "format:write": "prettier --cache --write --list-different --ignore-path .gitignore --ignore-path .prettierignore ."
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.5.0",
-    "@changesets/cli": "^2.27.5",
-    "@tszhong0411/prettier-config": "^0.0.5",
     "prettier": "^3.3.2"
   },
   "engines": {
