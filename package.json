@@ -1,0 +1,44 @@
+{
+  "name": "hong-theme",
+  "version": "0.0.1",
+  "description": "A opinionated theme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tszhong0411/hong-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tszhong0411/honghong.me/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "format:check": "prettier --cache --check --ignore-path .gitignore --ignore-path .prettierignore .",
+    "format:write": "prettier --cache --write --list-different --ignore-path .gitignore --ignore-path .prettierignore .",
+    "package": "vsce package",
+    "version": "changeset version"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.5",
+    "@tszhong0411/prettier-config": "^0.0.5",
+    "prettier": "^3.3.2"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Hong",
+        "path": "./themes/Hong-color-theme.json",
+        "uiTheme": "vs-dark"
+      }
+    ]
+  },
+  "displayName": "Hong Theme",
+  "icon": "icon.png",
+  "publisher": "tszhong0411"
+}
