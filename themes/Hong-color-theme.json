@@ -263,6 +263,7 @@
     "widget.border": "#313131"
   },
   "name": "Hong",
+  "semanticHighlighting": true,
   "tokenColors": [
     {
       "scope": ["comment", "punctuation.definition.comment", "string.comment"],
